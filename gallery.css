@@ -1,0 +1,137 @@
+body {
+  background-color: #eee;
+}
+header {
+  width: 100vw;
+  height: 7rem;
+}
+.navBar {
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #eee;
+  box-shadow: 0 0 3px;
+}
+.navBar .pageName {
+  text-decoration: none;
+  font-size: x-large;
+  color: #1e1e1e;
+}
+.navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navBar ul li {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navBar ul li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: x-large;
+  color: #1e1e1e;
+  opacity: 0.85;
+}
+.navBar ul li a:hover {
+  opacity: 1;
+}
+.wrapper {
+  margin: 0 15vw;
+}
+
+.indexGallery {
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img2 img6 img7";
+}
+.galleryImg {
+  width: 100%;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.img1 {
+  background-image: url(./img/img1.jpg);
+  grid-area: img1;
+}
+.img2 {
+  background-image: url(./img/img2.jpg);
+  grid-area: img2;
+  height: 547px;
+}
+.img3 {
+  background-image: url(./img/img3.jpg);
+  grid-area: img3;
+}
+.img4 {
+  background-image: url(./img/img4.JPG);
+  grid-area: img4;
+}
+.img5 {
+  background-image: url(./img/img5.jpg);
+  grid-area: img5;
+}
+.img6 {
+  background-image: url(./img/img6.jpg);
+  grid-area: img6;
+}
+.img7 {
+  background-image: url(./img/img7.jpg);
+  grid-area: img7;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 300ms ease-in-out;
+}
+.windowCover {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.windowCover img {
+  position: relative;
+  z-index: 200;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+.windowCover button {
+  position: fixed;
+  width: 3rem;
+  height: 2rem;
+  font-size: medium;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  margin: 0 1rem;
+  color: #eee;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+  display: block;
+  top: 48vh;
+  z-index: 150;
+}
+.btn-next {
+}
